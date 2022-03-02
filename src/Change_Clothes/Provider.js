@@ -17,7 +17,7 @@ let Reducer = (state, action) => {
     switch (action.type) {
         case "Change": {
             for (let stateItem in state) {
-                console.log(state[stateItem])
+              
                 if (state[stateItem].type === action.item.type) {
                     state[stateItem].imgSrc_png = action.item.imgSrc_png
                     return { ...state }
